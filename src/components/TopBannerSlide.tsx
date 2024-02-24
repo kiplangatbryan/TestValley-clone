@@ -15,7 +15,7 @@ export default function TopBannerSlide() {
     const bb = "https://api.testvalley.kr/main-banner/all"
     
     useEffect(() => {
-        fetch("all.json")
+        fetch("https://api.testvalley.kr/main-banner/all")
         .then(response => response.json())
             // 4. Setting *dogImage* to the image url that we received from the response above
         .then((data) => {

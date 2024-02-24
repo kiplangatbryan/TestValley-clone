@@ -15,7 +15,7 @@ export default function Example() {
   const bb = "https://api.testvalley.kr/collections"
   
       useEffect(() => {
-            fetch("collections.json")
+            fetch("https://api.testvalley.kr/collections")
             .then(response => response.json())
                 // 4. Setting *dogImage* to the image url that we received from the response above
             .then((allCollections) => {
